@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView_038"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/heightTextView_038"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/heightTextView_038"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your height (cm):"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/editHeight_038"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView_038" />
+
+    <EditText
+        android:id="@+id/editHeight_038"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/weightTextView_038"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightTextView_038" />
+
+    <TextView
+        android:id="@+id/weightTextView_038"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your weight (kg):"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/editWeight_038"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHeight_038" />
+
+    <EditText
+        android:id="@+id/editWeight_038"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_038"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightTextView_038" />
+
+    <Button
+        android:id="@+id/button_038"
+        android:layout_width="158dp"
+        android:layout_height="67dp"
+        android:text="Calculate"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView_038"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWeight_038" />
+
+    <TextView
+        android:id="@+id/resultTextView_038"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_038" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
